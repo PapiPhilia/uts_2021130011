@@ -8,18 +8,28 @@ class MyLoginScreen extends StatefulWidget {
 }
 
 class _MyLoginScreenState extends State<MyLoginScreen>  {
-  TextEditingController emailController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
 
 
   @override
   Widget build(BuildContext context)  {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Welcome to Shop'),
-        centerTitle: true,
+        title: const Text(
+          'Welcome to Shop',
+          style: TextStyle(
+            color: Colors.grey,
+            fontWeight: FontWeight.w700,
+            fontSize: 30,
+          ),
+        ),
       ),
-      body: 
+      body: Form(
+        child: TextFormField(
+            
+          ),
+        ),
     );
   }
 }
