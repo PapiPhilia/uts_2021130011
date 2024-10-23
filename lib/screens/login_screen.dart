@@ -17,18 +17,36 @@ class _MyLoginScreenState extends State<MyLoginScreen>  {
   @override
   Widget build(BuildContext context)  {
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text(
-          'Welcome to Shop',
-          style: TextStyle(
-            color: Colors.grey,
-            fontWeight: FontWeight.w700,
-            fontSize: 30,
-          ),
+        title: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              padding: const EdgeInsets.only(bottom: 2),
+              height: 42,
+              width: double.infinity,
+              color: Colors.grey,
+              child: Image.asset(
+                '',
+                fit: BoxFit.contain,
+              ),
+            ),
+            const Text(
+              'Welcome to Shop',
+              style: TextStyle(
+                color: Colors.grey,
+                fontWeight: FontWeight.w700,
+                fontSize: 30,
+              ),
+            ),
+          ],
         ),
       ),
-      body: Form(
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(24),
+      child: Form(
         key: _formKey,
         child: ListView(
           padding: const EdgeInsets.all(16),
@@ -79,7 +97,7 @@ class _MyLoginScreenState extends State<MyLoginScreen>  {
                   );
                   Navigator.push(
                     context, 
-                    MaterialPageRoute(builder: (context) => HomeScreen())
+                    MaterialPageRoute(builder: (context) => const HomeScreen())
                   );
                 }
                 },
@@ -88,6 +106,8 @@ class _MyLoginScreenState extends State<MyLoginScreen>  {
           ],
         ),
       ),
+        )
+      )
     );
   }
 }
