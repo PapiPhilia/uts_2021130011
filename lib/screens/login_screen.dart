@@ -24,20 +24,20 @@ class _MyLoginScreenState extends State<MyLoginScreen>  {
           children: [
             Container(
               padding: const EdgeInsets.only(bottom: 2),
-              height: 42,
+              height: 12,
               width: double.maxFinite,
               color: Colors.grey,
-              // child: Image.asset(
-              //   '',
-              //   fit: BoxFit.contain,
-              // ),
+              child: Image.asset(
+                'assets/images/gambar-kosong.jpg',
+                fit: BoxFit.contain,
+              ),
             ),
             const Text(
               'Welcome to Shop',
               style: TextStyle(
                 color: Colors.grey,
                 fontWeight: FontWeight.w700,
-                fontSize: 30,
+                fontSize: 28,
               ),
             ),
           ],
@@ -45,7 +45,7 @@ class _MyLoginScreenState extends State<MyLoginScreen>  {
       ),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.all(24),
+          padding: const EdgeInsets.all(10),
       child: Form(
         key: _formKey,
         child: ListView(
@@ -92,7 +92,7 @@ class _MyLoginScreenState extends State<MyLoginScreen>  {
                     if (_formKey.currentState!.validate()) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(
-                      content: Text('successfully log in!'),
+                      content: Text('berhasil login!'),
                     ),
                   );
                   Navigator.push(
