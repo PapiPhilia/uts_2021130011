@@ -8,13 +8,18 @@ class MyLoginScreen extends StatefulWidget {
 }
 
 class _MyLoginScreenState extends State<MyLoginScreen>  {
-  final _formKey = GlobalKey<FormState>();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
 
 
   @override
-  Widget build(BuildContext context) {
-      
-    throw UnimplementedError();
+  Widget build(BuildContext context)  {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Welcome to Shop'),
+        centerTitle: true,
+      ),
+      body: 
+    );
   }
-
 }
