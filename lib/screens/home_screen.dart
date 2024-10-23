@@ -15,6 +15,14 @@ class _HomeScreen extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Product'),
+        actions: [
+          IconButton(
+            onPressed: () {
+              
+            }, 
+            icon: const Icon(Icons.search),
+          ),
+        ],
       )
     );
   }
