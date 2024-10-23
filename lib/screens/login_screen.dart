@@ -23,14 +23,14 @@ class _MyLoginScreenState extends State<MyLoginScreen>  {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              padding: const EdgeInsets.only(bottom: 2),
-              height: 12,
-              width: double.maxFinite,
-              color: Colors.grey,
-              child: Image.asset(
-                'assets/images/gambar-kosong.jpg',
-                fit: BoxFit.contain,
-              ),
+              // padding: const EdgeInsets.only(bottom: 2),
+              // height: 12,
+              // width: double.maxFinite,
+              // color: Colors.grey,
+              // child: Image.asset(
+              //   '/assets/images/gambar-kosong.jpg',
+              //   fit: BoxFit.contain,
+              // ),
             ),
             const Text(
               'Welcome to Shop',
