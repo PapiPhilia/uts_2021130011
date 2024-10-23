@@ -26,10 +26,26 @@ class _MyLoginScreenState extends State<MyLoginScreen>  {
         ),
       ),
       body: Form(
-        child: TextFormField(
-            
-          ),
+        child: ListView(
+          padding: const EdgeInsets.all(16),
+          children: <Widget>[
+            TextFormField(
+              controller: emailController,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'email',
+              ),
+            ),
+            TextFormField(
+              controller: passwordController,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'password',
+              ),
+            ),
+          ],
         ),
+      ),
     );
   }
 }
