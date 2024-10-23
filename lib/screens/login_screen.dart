@@ -25,12 +25,12 @@ class _MyLoginScreenState extends State<MyLoginScreen>  {
             Container(
               padding: const EdgeInsets.only(bottom: 2),
               height: 42,
-              width: double.infinity,
+              width: double.maxFinite,
               color: Colors.grey,
-              child: Image.asset(
-                '',
-                fit: BoxFit.contain,
-              ),
+              // child: Image.asset(
+              //   '',
+              //   fit: BoxFit.contain,
+              // ),
             ),
             const Text(
               'Welcome to Shop',
