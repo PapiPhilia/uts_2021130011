@@ -14,11 +14,10 @@ class _HomeScreen extends State<HomeScreen> {
   Widget build(BuildContext context)  {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Product'),
+        title: const Text('Our Product'),
         actions: [
           IconButton(
             onPressed: () {
-              
             }, 
             icon: const Icon(Icons.search),
           ),
@@ -26,5 +25,4 @@ class _HomeScreen extends State<HomeScreen> {
       )
     );
   }
-
 }
