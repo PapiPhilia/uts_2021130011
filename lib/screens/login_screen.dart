@@ -14,7 +14,7 @@ class _MyLoginScreenState extends State<MyLoginScreen>  {
 
   @override
   Widget build(BuildContext context)  {
-    return Scaffold(
+    return Scaffold(  
       appBar: AppBar(
         title: const Text(
           'Welcome to Shop',
@@ -41,6 +41,16 @@ class _MyLoginScreenState extends State<MyLoginScreen>  {
               decoration: const InputDecoration(
                 border: OutlineInputBorder(),
                 labelText: 'password',
+              ),
+            ),
+            Container(
+              padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                child: ElevatedButton(
+                  child: const Text('Login'),
+                  onPressed: () {
+                    print(emailController.text);
+                    print(passwordController.text);
+                },
               ),
             ),
           ],
